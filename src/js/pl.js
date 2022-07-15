@@ -71,3 +71,11 @@ function setToMatthew() {
     toggleAudio();
   }
 }
+
+function setToIvy() {
+  audio.src =
+    "https://netivebucket.s3.amazonaws.com/tts_audio_files/2022-07-15_162548.3304550000_admin--companyUrl--2022-07-15_095801.5697320000_tes.png";
+  if (audio.paused == true) {
+    toggleAudio();
+  }
+}
