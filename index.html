@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Waves | Doc2Podcast | Turn any document to human like AI Speech!</title>
+    <meta name="description"
+        content="Easily listen to any document on the go in a few clicks and boost your productivity!
+        In a seconds recieve a podcast of your own documents while working on something else!!
+        Listen to important papers, documents, word documents, contracts on the go!
+        Completely free untill beta! In a few seconds you can recieve mp3 files of your document that you can also download!
+        Don't be worried if you want to use a different player! just copy paste the download / streaming link and listen anywhere!">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="src/hh.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+
+</head>
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="asset-light" src="dist/images/orange.png" width="100px" alt="Logo">
+
+                            </a>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Listen to important documents on the go!</h1>
+                            <p class="hero-paragraph">Convert any document (PDF, txt, jpg,
+                                png, html etc.) into most realistic human like speech! </p>
+                            <div class="hero-cta">
+                                <a class="button button-primary" style="background-color: orange"
+                                    href="https://orange-waves.vercel.app/">Join the free
+                                    beta!</a>
+                                <a class="button button-primary" style="background-color: orange"
+                                    href="#player-background">Listen To
+                                    Demo
+                                </a>
+                                <!--
+                                    <div class="lights-toggle">
+									<input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
+									<label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
+								</div>
+                                -->
+                            </div>
+                        </div>
+                        <div class="hero-media">
+
+
+
+                            <div class="header-illustration">
+                                <img class="header-illustration-image asset-light"
+                                    src="dist/images/header-illustration-light.svg" alt="Header illustration">
+                                <img class="header-illustration-image asset-dark"
+                                    src="dist/images/header-illustration-dark.svg" alt="Header illustration">
+                            </div>
+                            <div class="hero-media-illustration">
+                                <img class="hero-media-illustration-image asset-light"
+                                    src="dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
+                                <img class="hero-media-illustration-image asset-dark"
+                                    src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+                            </div>
+                            <div class="hero-media-container">
+                                <img class="hero-media-image asset-light"
+                                    src="dist/images/undraw_online_test_re_kyfx.svg" alt="Hero media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-header text-center">
+                            <div class="container-sm">
+                                <h2 class="section-title mt-0">Listen to it yourself and then judge!</h2>
+                                <p class="section-paragraph">Click on the radio below to listen to a sample!
+                                </p>
+                                <div class="player" id="player-background">
+                                    <div class="radio" id="audio-player"></div>
+                                    <audio controls id="audio-element">
+                                        <source
+                                            src="https://netivebucket.s3.ap-south-1.amazonaws.com/tts_audio_files/2022-07-13_140140.0155270000_netiveAdmin--companyUrl--2022-03-10_103247.06513800.png"
+                                            type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+
+                                </div>
+                                <div class="player-controls" id="player-background">
+                                    <ul>
+                                        <li>
+                                            <button class="radio-btn" onclick="setToJustin()" id="Justin-button">
+                                            </button>
+                                            <p>
+                                                Justin
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <button class="radio-btn" id="Joana-button" onclick="setToJoana()"></button>
+                                            <p>
+                                                Joana
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <button class="radio-btn" id="Matthew-button"
+                                                onclick="setToMatthew()"></button>
+                                            <p>
+                                                Matthew
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <button class="radio-btn" id="Ivy-button"></button>
+                                            <p>
+                                                Ivy
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <button class="radio-btn" id="Kendra-button"></button>
+                                            <p>
+                                                Kendra
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <button class="radio-btn" id="Emma-button"
+                                                style="background : url('https://freepngimg.com/save/19177-united-kingdom-flag-transparent/300x300');background-size: cover;"></button>
+                                            <p>
+                                                Emma
+                                            </p>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                        <div class="features-inner section-inner has-bottom-divider" data-aos="fade-left"
+                            data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                            <div class="features-header text-center">
+                                <div class="container-sm">
+                                    <h2 class="section-title mt-0">Wouldn't it be awesome if you could just listen to
+                                        your
+                                        documents while working?</h2>
+                                    <p class="section-paragraph">Increase your total productivity and work while also
+                                        'reading' your documents!
+                                        With several different voice options to choose from!</p>
+                                    <div class="features-image">
+                                        <img class="features-illustration asset-dark"
+                                            src="dist/images/features-illustration-dark.svg" alt="Feature illustration">
+                                        <img class="features-box asset-dark" src="dist/images/features-box-dark.svg"
+                                            alt="Feature box">
+                                        <img class="features-illustration asset-dark"
+                                            src="dist/images/features-illustration-top-dark.svg"
+                                            alt="Feature illustration top">
+                                        <img class="features-illustration asset-light"
+                                            src="dist/images/features-illustration-light.svg"
+                                            alt="Feature illustration">
+                                        <img class="features-box asset-light"
+                                            src="dist/images/undraw_everyday_life_re_1lfb.svg" style="box-shadow: none;"
+                                            alt="Feature box">
+                                        <img class="features-illustration asset-light"
+                                            src="dist/images/features-illustration-top-light.svg"
+                                            alt="Feature illustration top">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="features-wrap">
+                                <div class="feature is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img class="asset-light" src="dist/images/feature-01-light.svg"
+                                                alt="Feature 01">
+                                            <img class="asset-dark" src="dist/images/feature-01-dark.svg"
+                                                alt="Feature 01">
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3 class="feature-title mt-0">Universal</h3>
+                                            <p class="text-sm mb-0">Any document it may be, an image (JPG, PNG etc) a
+                                                document format (PDF, WORD etc.) just hit convert and it'll provide you
+                                                your
+                                                'podcast' of the day!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img class="asset-light" src="dist/images/feature-02-light.svg"
+                                                alt="Feature 02">
+                                            <img class="asset-dark" src="dist/images/feature-02-dark.svg"
+                                                alt="Feature 02">
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3 class="feature-title mt-0">Productive</h3>
+                                            <p class="text-sm mb-0">You can easily work on other things while you device
+                                                explains the documents to you with the help of orange ai!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img class="asset-light" src="dist/images/feature-03-light.svg"
+                                                alt="Feature 03">
+                                            <img class="asset-dark" src="dist/images/feature-03-dark.svg"
+                                                alt="Feature 03">
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3 class="feature-title mt-0">Lightening Fast</h3>
+                                            <p class="text-sm mb-0">And that's not it! You'll get your podcast ready in
+                                                a
+                                                swing! no need to wait hours for the files to convert!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="cta section">
+                <div class="container-sm">
+                    <div class="cta-inner section-inner">
+                        <div class="cta-header text-center">
+                            <h2 class="section-title mt-0">Join right now and get access to our free beta! No credit
+                                card required!</h2>
+                            <p class="section-paragraph">Start listening today! and revolutionize your work experience
+                                today! </p>
+                            <div class="cta-cta">
+                                <a style="background-color:orange" class="button button-primary"
+                                    href="https://orange-waves.vercel.app/">Join</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer has-top-divider" style="height: 20px;">
+
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/js/pl.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

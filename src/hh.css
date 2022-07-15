@@ -1,0 +1,169 @@
+
+
+
+
+
+.play{
+    position: absolute;
+    top:50%;
+
+}
+
+.play-icon{
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-copyright, .site-footer a{
+    color:white !important;
+}
+
+.play-icon-img{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    width: '10rel';
+    background-size: 100%;
+}
+
+
+audio{
+    display: none;
+}
+
+.radio{
+    background-image: url('https://www.seekpng.com/png/full/327-3270378_radio-advertising-isometric-radio-icon.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    
+    width:200px;
+    height:300px;
+
+    z-index: 999;
+
+    
+
+    transition: all 0.3s ease-in-out;
+    
+    
+    
+}
+
+.dance, .radio:hover{
+    transform: scale(1.1);
+    animation: radio-anim 0.3s ease-in-out;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+    
+} html{
+    scroll-behavior: smooth;
+    --webkit-overflow-scrolling: touch;
+}
+
+
+
+
+
+.waves{
+    background-image: url('https://media.istockphoto.com/vectors/sound-wave-equalizer-vector-design-vector-id1124619938?k=20&m=1124619938&s=612x612&w=0&h=dMqd-Wah-OjG0LFtqxbz-c4REXw2BoJMKESOFALtZo4=');
+    background-position: center; background-size: cover;
+    animation: sound-waves 5s infinite;
+}
+
+.radio:hover{
+    cursor: pointer;
+}
+
+.player-controls{
+}
+.player-controls ul{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+
+
+.radio-btn{
+    background: url('https://cdn.pixabay.com/photo/2020/07/07/19/33/america-5381699_960_720.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    
+    
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+    cursor: pointer;
+    
+}
+
+.radio-btn p{
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+@keyframes radio-anim {
+    0% {
+        transform: rotate(0deg);
+        transform: scale(1);
+    }
+    50% {
+        
+        transform: scale(1.1);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+        transform: scale(1);
+    }
+    
+}
+
+
+
+.player{
+    width: 100%;
+    display:flex;
+    
+    justify-content: center;
+}
+
+
+
+@keyframes sound-waves {
+    0% {
+        background-position-y: bottom;
+    }
+    50% {
+        background-position-y: top;
+    }
+    100% {
+        background-position-y: bottom;
+    }
+    
+}
+
+/* Media Player */
+
+
+
+
