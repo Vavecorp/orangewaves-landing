@@ -165,5 +165,25 @@ audio{
 /* Media Player */
 
 
+.wordpress_plugin_section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.wordpress_plugin_section .left {
+    width: 20%;
+    height:20%;
 
+}
+
+.wordpress_plugin_section .right {
+
+
+}
+
+ul li {
+    list-style: none;
+}
 
